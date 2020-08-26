@@ -17,7 +17,6 @@ class HostingAppViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(HostingAppViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(HostingAppViewController.keyboardDidHide), name: UIResponder.keyboardDidHideNotification, object: nil)
-        //NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillChangeFrame:"), name: UIKeyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(HostingAppViewController.keyboardDidChangeFrame(_:)), name: UIResponder.keyboardDidChangeFrameNotification, object: nil)
     }
 
